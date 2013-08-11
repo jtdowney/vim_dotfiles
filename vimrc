@@ -19,6 +19,7 @@ set textwidth=0 nosmartindent tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 set ignorecase
 set smartcase
 set wildignore+=*.pyc,*.o,*.class,*.rbc
+set nofoldenable
 
 if version >= 700
   autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en_us

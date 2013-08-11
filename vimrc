@@ -78,6 +78,14 @@ endfunction
 command! -nargs=0 GitGrepWord :call GitGrepWord()
 nnoremap <silent> <Leader>gw :GitGrepWord<CR>
 
+function! VimuxSlime()
+  call VimuxSendText(@v)
+  call VimuxSendKeys("Enter")
+endfunction
+
+vmap <LocalLeader>vs "vy :call VimuxSlime()<CR>
+nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
+
 let g:NERDTreeIgnore=['\.pyc', '\.o', '\.class', '\.rbc']
 let g:CommandTMaxHeight = 15
 let g:CommandTMatchWindowAtTop = 1

@@ -8,4 +8,4 @@ function! RubyInsertDebug()
   let l:name = input("Variable name: ")
   execute "normal! Oputs \"DBG " . name . ": #{" . name . ".inspect}\""
 endfunction
-map <silent> <C-D> :call RubyInsertDebug()<CR>
+map <silent> <LocalLeader>dbg :call RubyInsertDebug()<CR>

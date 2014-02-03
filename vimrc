@@ -12,7 +12,7 @@ set incsearch
 set background=dark
 set hidden
 set backspace=indent,eol,start
-set directory=/tmp/
+set directory=/tmp//
 set ruler
 set wrap
 set scrolloff=5

@@ -5,6 +5,7 @@ syntax on
 
 filetype plugin indent on
 
+set encoding=utf8
 set hlsearch
 set number
 set showmatch

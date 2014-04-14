@@ -96,7 +96,7 @@ let g:CommandTMatchWindowAtTop = 1
 let g:CommandTCancelMap='<Esc>'
 let g:VimuxHeight = '30'
 let g:VimuxOrientation = 'h'
-let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
 
 map <silent> <LocalLeader>rt :!ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg" --extra=+f --langmap=Lisp:+.clj<CR>
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>

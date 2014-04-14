@@ -29,7 +29,7 @@ if version >= 700
 endif
 
 if &t_Co == 256
-  colorscheme Sunburst
+  colorscheme jellybeans
 endif
 
 " Highlight trailing whitespace

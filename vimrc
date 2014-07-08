@@ -95,6 +95,9 @@ let g:VimuxHeight = '30'
 let g:VimuxOrientation = 'h'
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 map <silent> <LocalLeader>rt :!ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg" --extra=+f --langmap=Lisp:+.clj<CR>
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>

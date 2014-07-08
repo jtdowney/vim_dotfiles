@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vimux-ruby-test"]
 	path = vim/bundle/vimux-ruby-test
 	url = https://github.com/pgr0ss/vimux-ruby-test.git
+[submodule "vim/bundle/vimux-golang"]
+	path = vim/bundle/vimux-golang
+	url = https://github.com/benmills/vimux-golang.git

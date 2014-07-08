@@ -90,10 +90,8 @@ endfunction
 vmap <LocalLeader>vs "vy :call VimuxSlime()<CR>
 nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
 
+let g:ctrlp_match_window = 'top,order:ttb,max:15'
 let g:NERDTreeIgnore=['\.pyc', '\.o', '\.class', '\.rbc']
-let g:CommandTMaxHeight = 15
-let g:CommandTMatchWindowAtTop = 1
-let g:CommandTCancelMap='<Esc>'
 let g:VimuxHeight = '30'
 let g:VimuxOrientation = 'h'
 let g:airline_powerline_fonts = 1
@@ -103,9 +101,8 @@ map <silent> <LocalLeader>rt :!ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg
 map <silent> <LocalLeader>nt :NERDTreeToggle<CR>
 map <silent> <LocalLeader>nr :NERDTree<CR>
 map <silent> <LocalLeader>nf :NERDTreeFind<CR>
-map <silent> <leader>ff :CommandT<CR>
-map <silent> <leader>fb :CommandTBuffer<CR>
-map <silent> <leader>fr :CommandTFlush<CR>
+map <silent> <leader>ff :CtrlP<CR>
+map <silent> <leader>fr :CtrlPClearCache<CR>
 map <silent> <LocalLeader>nh :nohls<CR>
 map <silent> <LocalLeader>bd :bufdo :bd<CR>
 map <silent> <LocalLeader>cc :TComment<CR>

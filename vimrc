@@ -23,10 +23,9 @@ set smartcase
 set wildignore+=*.pyc,*.o,*.class,*.rbc
 set nofoldenable
 
-if version >= 700
-  autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en_us
-  autocmd FileType tex setlocal spell spelllang=en_us
-endif
+autocmd BufNewFile,BufRead *.txt setlocal spell spelllang=en_us
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
+autocmd FileType tex setlocal spell spelllang=en_us
 
 if &t_Co == 256
   colorscheme jellybeans

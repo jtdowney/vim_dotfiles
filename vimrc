@@ -1,8 +1,40 @@
 set nocompatible
-execute pathogen#infect()
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle'
+
+Plugin 'Align'
+Plugin 'benmills/vimux'
+Plugin 'benmills/vimux-golang'
+Plugin 'bling/vim-airline'
+Plugin 'cespare/vim-toml'
+Plugin 'fatih/vim-go'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ledger/vim-ledger'
+Plugin 'markcornick/vim-terraform'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'paredit.vim'
+Plugin 'pgr0ss/vimux-ruby-test'
+Plugin 'rainbow_parentheses.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/nerdtree'
+Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'wting/rust.vim'
+
+call vundle#end()
 
 syntax on
-
 filetype plugin indent on
 
 set encoding=utf8

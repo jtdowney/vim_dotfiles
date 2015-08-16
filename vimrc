@@ -1,38 +1,33 @@
-set nocompatible
-filetype off
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'Align'
+Plug 'benmills/vimux'
+Plug 'benmills/vimux-golang', { 'for': 'go' }
+Plug 'bling/vim-airline'
+Plug 'cespare/vim-toml'
+Plug 'fatih/vim-go'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'kchmck/vim-coffee-script'
+Plug 'kien/ctrlp.vim'
+Plug 'kovisoft/paredit', { 'for': ['clojure', 'scheme'] }
+Plug 'ledger/vim-ledger'
+Plug 'markcornick/vim-terraform'
+Plug 'nanotech/jellybeans.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'paredit.vim'
+Plug 'pgr0ss/vimux-ruby-test', { 'for': 'ruby' }
+Plug 'rainbow_parentheses.vim', { 'for': ['clojure', 'scheme'] }
+Plug 'rodjek/vim-puppet'
+Plug 'scrooloose/nerdtree'
+Plug 'slim-template/vim-slim'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
+Plug 'wting/rust.vim'
 
-Plugin 'gmarik/Vundle'
-
-Plugin 'Align'
-Plugin 'benmills/vimux'
-Plugin 'benmills/vimux-golang'
-Plugin 'bling/vim-airline'
-Plugin 'cespare/vim-toml'
-Plugin 'fatih/vim-go'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'ledger/vim-ledger'
-Plugin 'markcornick/vim-terraform'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'paredit.vim'
-Plugin 'pgr0ss/vimux-ruby-test'
-Plugin 'rainbow_parentheses.vim'
-Plugin 'rodjek/vim-puppet'
-Plugin 'scrooloose/nerdtree'
-Plugin 'slim-template/vim-slim'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-rails'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'wting/rust.vim'
-
-call vundle#end()
+call plug#end()
 
 syntax on
 filetype plugin indent on

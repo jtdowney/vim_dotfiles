@@ -21,6 +21,7 @@ Plug 'rainbow_parentheses.vim', { 'for': ['clojure', 'scheme'] }
 Plug 'rodjek/vim-puppet'
 Plug 'scrooloose/nerdtree'
 Plug 'slim-template/vim-slim'
+Plug 'tComment'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-markdown'

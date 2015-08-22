@@ -10,6 +10,7 @@ Plug 'fatih/vim-go'
 Plug 'honza/vim-snippets'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'jtdowney/vim-som'
+Plug 'jtdowney/vimux-cargo'
 Plug 'kchmck/vim-coffee-script'
 Plug 'kien/ctrlp.vim'
 Plug 'kovisoft/paredit', { 'for': ['clojure', 'scheme'] }

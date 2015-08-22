@@ -1,11 +1,13 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'Align'
+Plug 'SirVer/ultisnips'
 Plug 'benmills/vimux'
 Plug 'benmills/vimux-golang', { 'for': 'go' }
 Plug 'bling/vim-airline'
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-go'
+Plug 'honza/vim-snippets'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'jtdowney/vim-som'
 Plug 'kchmck/vim-coffee-script'
@@ -147,3 +149,7 @@ imap <C-L> <SPACE>=><SPACE>
 nnoremap <silent> k gk
 nnoremap <silent> j gj
 nnoremap <silent> Y y$
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

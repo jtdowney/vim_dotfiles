@@ -23,6 +23,7 @@ Plug 'pgr0ss/vimux-ruby-test', { 'for': 'ruby' }
 Plug 'rainbow_parentheses.vim', { 'for': ['clojure', 'scheme'] }
 Plug 'rodjek/vim-puppet'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
 Plug 'slim-template/vim-slim'
 Plug 'tComment'
 Plug 'tpope/vim-bundler'
@@ -120,6 +121,14 @@ endfunction
 vmap <LocalLeader>vs "vy :call VimuxSlime()<CR>
 nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 let g:ctrlp_match_window = 'top,order:ttb,max:15'
 let g:NERDTreeIgnore=['\.pyc', '\.o', '\.class', '\.rbc']
 let g:VimuxHeight = '30'
